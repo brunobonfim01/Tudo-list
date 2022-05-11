@@ -1,0 +1,22 @@
+       <table class="tabela">
+            <thead class="tabela__cabecalho">
+              <th class="tabela__cabecalho__conteudo">Tarefas Pendentes</th>
+            </thead>
+            <tbody class="tabela__linha1">
+              <tr class="tabela__linha" *ngFor="let adicionado of listar_task">
+                <td class="tabela__conteudo__text">{{ adicionado.title }}</td>
+                <td class="tabela__conteudo__descripition">{{ adicionado.description }}</td>
+              
+                <i class="material-icons" (click)="concluiTarefa(adicionado)">check</i>
+                <i class="material-icons" (click)="deletaTarefa(adicionado)">clear</i>
+                <a routerLink="/atualizaTarefa/{{adicionado.id}}"  class="material-icons">create</a>
+              </tr>
+            </tbody>
+          </table>
+          <ng-template #listaVazia>
+            <p>Nenhuma tarefa cadastrada</p>
+          </ng-template>
+
+        
+        
+       

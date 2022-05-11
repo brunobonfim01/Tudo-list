@@ -1,0 +1,44 @@
+
+ .formulario{
+   height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  margin: 20px 0;
+ }
+ 
+ 
+
+.formulario__titulo{
+  align-items: center;
+  
+
+}
+
+.form-field-1{
+  padding: 20px;
+  align-content: center;
+
+ }
+
+ .form-field-2 {
+  padding: 20px;
+  align-content: center;
+ }
+
+ 
+#bntAdd{
+  width: 100px;
+  height: 20px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.313rem);
+  border-radius: 00.313rem;
+  cursor: pointer;
+ }
+
+ .botao:hover {
+    transform: scale(1.2);
+    background-color: black;
+    color: white;
+ }

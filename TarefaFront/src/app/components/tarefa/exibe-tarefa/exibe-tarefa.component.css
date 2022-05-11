@@ -1,0 +1,15 @@
+.tabela {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  margin: 20px 0;
+  }
+
+.tabela__cabecalho__conteudo{
+    text-align: center;
+    padding: 15px;
+}
+
+ 
+

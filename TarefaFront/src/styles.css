@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+
+  html, body { height: 100%; }
+  body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+  .red {
+      color: #e35e6b;
+  }
+  
+
+  :root {
+      --primary: purple;
+      --secondary: #132A13;
+      --padding: 15px;
+      --cinza: #405040;
+      --cinza-claro: #dedede;
+    }
+
+    * {
+      font-family: "Roboto",sans-serif;
+    }
+
+    /*.container {
+     border: solid  red;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+    }*/
+    
+
+    .material-icons {
+      cursor: pointer;
+      font-style: none;
+    }

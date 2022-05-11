@@ -1,0 +1,23 @@
+<section class="container">
+    <form class="formulario" (ngSubmit)="novaTarefa()">
+      <h2 class="formulario__titulo">Nova tarefa</h2>
+      
+        <div class="form-field-1">
+          <label class="form-field__label" for="titulo" ></label>
+            <input class="form-field__input" id="titulo" type="text" [(ngModel)]="tarefa.title" name="title" placeholder="Digite seu titulo" />
+        </div>
+    
+        <div class="form-field-2">
+          <label class="form-field__label" for="descricao"  ></label>
+            <input class="form-field__input" id="descricao" type="text" [(ngModel)]="tarefa.description" name="descricao" (input)="onShowMessagError()" placeholder="Digite sua descrição" />
+        </div>
+        <div *ngIf="showMessage == true" class="alert-danger">Esse campo descrição é obritogório.</div>
+    
+        <div class="botao-wrapper">
+          <button class="botao" id="bntAdd" type="submit">Adicionar</button>
+        </div>     
+      
+    </form>
+  </section>
+  <router-outlet></router-outlet>
+  
